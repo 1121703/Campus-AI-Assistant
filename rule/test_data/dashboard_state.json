@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "user_id": "u_0001",
+      "selected_week_start": "2026-06-15",
+      "show_completed_tasks": false,
+      "collapsed_cards": [],
+      "updated_at": "2026-06-01T09:00:00+08:00"
+    }
+  ]
+}

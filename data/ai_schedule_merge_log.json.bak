@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "log_id": "add_1781534149",
+      "user_id": "u_0001",
+      "action": "add_only",
+      "added_event_ids": [
+        "e_1781534149"
+      ],
+      "overwritten_event_ids": [],
+      "deleted_event_ids": [],
+      "ts": "2026-06-15T22:35:49+08:00"
+    },
+    {
+      "log_id": "add_1781535689",
+      "user_id": "u_0001",
+      "action": "add_only",
+      "added_event_ids": [
+        "e_1781535689"
+      ],
+      "overwritten_event_ids": [],
+      "deleted_event_ids": [],
+      "ts": "2026-06-15T23:01:29+08:00"
+    },
+    {
+      "log_id": "add_1781536024",
+      "user_id": "u_0001",
+      "action": "add_only",
+      "added_event_ids": [
+        "e_1781536024"
+      ],
+      "overwritten_event_ids": [],
+      "deleted_event_ids": [],
+      "ts": "2026-06-15T23:07:04+08:00"
+    }
+  ]
+}

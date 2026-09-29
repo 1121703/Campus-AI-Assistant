@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "question_id": "q_0001",
+      "text": "最近一週，你感覺學業壓力的程度如何？",
+      "options": [
+        { "text": "幾乎沒有壓力，狀態很好", "stress_weight": 2, "energy_weight": 8 },
+        { "text": "有一些壓力，但還可以應對", "stress_weight": 5, "energy_weight": 5 },
+        { "text": "壓力較大，有點難以招架", "stress_weight": 8, "energy_weight": 3 },
+        { "text": "壓力非常大，快撐不住了", "stress_weight": 10, "energy_weight": 1 }
+      ],
+      "tags": ["stress", "study"],
+      "source": "manual",
+      "created_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "question_id": "q_0002",
+      "text": "最近的睡眠品質如何？",
+      "options": [
+        { "text": "睡得很好，精神飽滿", "stress_weight": 1, "energy_weight": 9 },
+        { "text": "偶爾睡不好，但大多還行", "stress_weight": 4, "energy_weight": 6 },
+        { "text": "常常難以入睡或睡眠中斷", "stress_weight": 7, "energy_weight": 3 },
+        { "text": "嚴重失眠，影響白天狀態", "stress_weight": 10, "energy_weight": 1 }
+      ],
+      "tags": ["sleep", "stress"],
+      "source": "manual",
+      "created_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "question_id": "q_0003",
+      "text": "最近與同學或朋友的相處如何？",
+      "options": [
+        { "text": "很愉快，社交生活豐富", "stress_weight": 1, "energy_weight": 9 },
+        { "text": "普通，偶爾有些摩擦", "stress_weight": 4, "energy_weight": 6 },
+        { "text": "有些孤立，不太想與人互動", "stress_weight": 7, "energy_weight": 3 },
+        { "text": "感覺與周遭格格不入，很孤獨", "stress_weight": 10, "energy_weight": 1 }
+      ],
+      "tags": ["social_pressure", "mental_health"],
+      "source": "manual",
+      "created_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "question_id": "q_0004",
+      "text": "最近的飲食與體能狀態如何？",
+      "options": [
+        { "text": "規律飲食，體能充沛", "stress_weight": 1, "energy_weight": 9 },
+        { "text": "飲食不太規律，但精神尚可", "stress_weight": 4, "energy_weight": 6 },
+        { "text": "常常忘記吃飯或食慾不振", "stress_weight": 7, "energy_weight": 3 },
+        { "text": "完全沒有食慾，體力很差", "stress_weight": 10, "energy_weight": 1 }
+      ],
+      "tags": ["health", "energy"],
+      "source": "manual",
+      "created_at": "2026-06-01T09:00:00+08:00"
+    },
+    {
+      "question_id": "q_0005",
+      "text": "面對即將到來的考試或截止日，你的心情如何？",
+      "options": [
+        { "text": "已做好充分準備，信心滿滿", "stress_weight": 2, "energy_weight": 8 },
+        { "text": "有些緊張但在正常範圍內", "stress_weight": 5, "energy_weight": 5 },
+        { "text": "非常焦慮，注意力很難集中", "stress_weight": 8, "energy_weight": 3 },
+        { "text": "幾乎無法面對，逃避不想想", "stress_weight": 10, "energy_weight": 1 }
+      ],
+      "tags": ["stress", "study", "mental_health"],
+      "source": "manual",
+      "created_at": "2026-06-01T09:00:00+08:00"
+    }
+  ]
+}

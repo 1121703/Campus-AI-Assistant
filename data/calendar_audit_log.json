@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "log_id": "cal_7A1B1DC3",
+      "user_id": "u_0001",
+      "action": "update_task",
+      "target_id": "t_0005",
+      "ts": "2026-06-04T19:06:12+08:00",
+      "detail": {
+        "updates": {
+          "title": "英文口說練習錄影",
+          "course": "大學英文",
+          "due_at": "2026-06-05T01:00:00.000Z",
+          "status": "pending",
+          "completed_at": null,
+          "note": "錄 2 分鐘自我介紹影片，上傳 Moodle"
+        }
+      }
+    },
+    {
+      "log_id": "cal_4CCA6528",
+      "user_id": "u_0001",
+      "action": "update_task",
+      "target_id": "t_0003",
+      "ts": "2026-06-04T19:16:11+08:00",
+      "detail": {
+        "updates": {
+          "title": "期末分組報告",
+          "course": "資料庫",
+          "due_at": "2026-06-11T04:00:00.000Z",
+          "status": "pending",
+          "completed_at": null,
+          "note": "需上台報告 15 分鐘，PPT + demo"
+        }
+      }
+    },
+    {
+      "log_id": "cal_9123F0D1",
+      "user_id": "u_0001",
+      "action": "delete_task",
+      "target_id": "t_0009",
+      "ts": "2026-06-04T19:16:44+08:00",
+      "detail": {}
+    },
+    {
+      "log_id": "cal_0C3A1232",
+      "user_id": "u_0001",
+      "action": "delete_event",
+      "target_id": "e_0002",
+      "ts": "2026-06-04T19:22:09+08:00",
+      "detail": {}
+    },
+    {
+      "log_id": "cal_B7D577B7",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "target_id": "t_0005",
+      "ts": "2026-06-04T19:28:16+08:00",
+      "detail": {}
+    },
+    {
+      "log_id": "cal_50595FF6",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "target_id": "t_0004",
+      "ts": "2026-06-04T19:28:19+08:00",
+      "detail": {}
+    },
+    {
+      "log_id": "cal_C05F3BD9",
+      "user_id": "u_0001",
+      "action": "update_task",
+      "target_id": "t_0003",
+      "ts": "2026-06-04T19:36:04+08:00",
+      "detail": {
+        "updates": {
+          "title": "期末分組報告",
+          "course": "資料庫",
+          "due_at": "2026-06-11T04:00:00.000Z",
+          "status": "completed",
+          "completed_at": "2026-06-04T11:36:04.651Z",
+          "note": "需上台報告 15 分鐘，PPT + demo"
+        }
+      }
+    },
+    {
+      "log_id": "cal_15815FA9",
+      "user_id": "u_0001",
+      "action": "update_task",
+      "target_id": "t_0005",
+      "ts": "2026-06-04T19:36:53+08:00",
+      "detail": {
+        "updates": {
+          "title": "英文口說練習錄影",
+          "course": "大學英文",
+          "due_at": "2026-06-05T01:00:00.000Z",
+          "status": "pending",
+          "completed_at": null,
+          "note": "錄 2 分鐘自我介紹影片，上傳 Moodle"
+        }
+      }
+    },
+    {
+      "log_id": "cal_123419BC",
+      "user_id": "u_0001",
+      "action": "create_task",
+      "target_id": "t_0013",
+      "ts": "2026-06-04T19:55:45+08:00",
+      "detail": {
+        "source": "manual"
+      }
+    },
+    {
+      "log_id": "cal_37174D1C",
+      "user_id": "u_0001",
+      "action": "create_task",
+      "target_id": "t_0014",
+      "ts": "2026-06-04T19:56:18+08:00",
+      "detail": {
+        "source": "manual"
+      }
+    },
+    {
+      "log_id": "cal_E3F5B353",
+      "user_id": "u_0001",
+      "action": "create_event",
+      "target_id": "e_0011",
+      "ts": "2026-06-04T19:58:59+08:00",
+      "detail": {
+        "source": "manual"
+      }
+    }
+  ]
+}

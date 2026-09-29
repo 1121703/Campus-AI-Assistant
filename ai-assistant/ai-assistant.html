@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 助手 | Campus AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:      #2e3141;
+            --card:    #353849;
+            --card-2:  #3d4051;
+            --primary: #4c5c96;
+            --primary-hover: #53639e;
+            --primary-dim: rgba(76,92,150,.18);
+            --text:    #ffffff;
+            --muted:   rgba(255,255,255,.65);
+            --border:  rgba(255,255,255,.125);
+            --success: #5bbf8a;
+            --danger:  #e87272;
+            --amber:   #f0a84e;
+            --radius:  12px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Source Sans Pro', system-ui, sans-serif;
+            background-color: var(--bg);
+            background-image: radial-gradient(rgba(255,255,255,.028) 1px, transparent 1px);
+            background-size: 26px 26px;
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-top: 60px;
+            overflow-x: hidden;
+        }
+
+        a { color: var(--primary); text-decoration: none; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 28px 20px 40px;
+        }
+
+        /* ── Tabs ── */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 22px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .tab-btn {
+            padding: 13px 22px;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--muted);
+            transition: .2s;
+            font-family: inherit;
+            margin-bottom: -2px;
+        }
+
+        .tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+        .tab-btn:hover:not(.active) { color: var(--text); }
+
+        .tab-content { display: none; animation: fadeIn .25s; }
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Cards ── */
+        .section {
+            background: var(--card);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+
+        .section h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .section-subtitle {
+            color: var(--muted);
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        /* ── Alert ── */
+        .alert { padding: 12px 14px; border-radius: 8px; margin-bottom: 14px; line-height: 1.6; font-size: 14px; }
+        .alert-info    { background: rgba(76,92,150,.18); color: #a5b4e8; border-left: 4px solid var(--primary); }
+        .alert-success { background: rgba(91,191,138,.15); color: #5bbf8a; border-left: 4px solid #5bbf8a; }
+        .alert-warning { background: rgba(240,168,78,.12); color: var(--amber); border-left: 4px solid var(--amber); }
+
+        /* ── Chat ── */
+        .chat-box {
+            height: 400px;
+            overflow-y: auto;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+
+        .chat-box::-webkit-scrollbar { width: 6px; }
+        .chat-box::-webkit-scrollbar-track { background: transparent; }
+        .chat-box::-webkit-scrollbar-thumb { background: var(--card-2); border-radius: 3px; }
+
+        .message { display: flex; margin-bottom: 14px; }
+        .message.user { justify-content: flex-end; }
+
+        .bubble {
+            max-width: min(680px, 85%);
+            padding: 11px 14px;
+            border-radius: 14px;
+            line-height: 1.65;
+            white-space: pre-wrap;
+            font-size: 14px;
+        }
+
+        .message.user .bubble {
+            background: var(--primary);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.ai .bubble {
+            background: var(--card-2);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-bottom-left-radius: 4px;
+        }
+
+        /* ── Input row ── */
+        .input-row { display: flex; gap: 10px; align-items: flex-end; }
+
+        textarea {
+            flex: 1;
+            resize: vertical;
+            min-height: 48px;
+            max-height: 140px;
+            padding: 11px 14px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 14px;
+            font-family: inherit;
+            line-height: 1.5;
+            transition: border-color .2s;
+        }
+
+        textarea::placeholder { color: var(--muted); }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(76,92,150,.2);
+        }
+
+        /* ── Button ── */
+        .btn {
+            padding: 11px 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .2s, transform .15s, box-shadow .15s;
+            white-space: nowrap;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 14px rgba(76,92,150,.4);
+        }
+
+        .btn:disabled { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+        /* ── Suggestion / report cards ── */
+        .suggestion-card {
+            background: var(--bg);
+            padding: 14px;
+            border-radius: 8px;
+            margin-top: 12px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .suggestion-card.accepted { border-left-color: var(--success); }
+
+        .report-card, .result-card {
+            background: var(--bg);
+            padding: 14px;
+            border-radius: 8px;
+            margin-top: 12px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .result-card { margin-top: 10px; border-left-color: var(--card-2); border: 1px solid var(--border); }
+
+        .card-title { font-weight: 700; color: var(--text); margin-bottom: 8px; font-size: 14px; }
+        .card-detail { font-size: 14px; color: var(--muted); margin: 4px 0; line-height: 1.65; }
+
+        .risk-high   { color: var(--danger); font-weight: 700; }
+        .risk-medium { color: var(--amber); font-weight: 700; }
+        .risk-low    { color: var(--success); font-weight: 700; }
+
+        ul { padding-left: 20px; margin-top: 8px; }
+        li { margin: 5px 0; line-height: 1.65; font-size: 14px; color: var(--muted); }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 10px;
+        }
+
+        .calendar-event {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 14px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .no-data { text-align: center; padding: 28px 10px; color: var(--muted); font-size: 14px; }
+
+        @media (max-width: 680px) {
+            .tabs { overflow-x: auto; }
+            .input-row { flex-direction: column; align-items: stretch; }
+            .bubble { max-width: 94%; }
+        }
+    </style>
+</head>
+<body>
+    <script src="/dashboard/assets/js/nav.js"></script>
+
+    <main class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab(0)">💬 聊聊</button>
+            <button class="tab-btn" onclick="switchTab(1)">🧠 心理分析</button>
+        </div>
+
+        <!-- Tab 0: 聊聊 + 行事曆 -->
+        <section class="tab-content active" id="tab-0">
+            <div class="section">
+                <h2>💬 聊聊</h2>
+                <p class="section-subtitle">
+                    一般問題會正常回應；如果你提到日期、時間、活動或提醒，AI 會提出排程建議，只有你按下「接受建議」後才會新增到行事曆。
+                </p>
+                <div id="chatBox" class="chat-box"></div>
+                <div class="input-row">
+                    <textarea id="chatInput" placeholder="例：明天下午 3 點幫我安排 2 小時寫報告；或直接問一般問題。"></textarea>
+                    <button class="btn" onclick="ChatModule.sendMessage()">送出</button>
+                </div>
+            </div>
+            <div class="section">
+                <h2>📆 已存在的行事曆資料</h2>
+                <div id="calendarContainer"><div class="no-data">載入中...</div></div>
+            </div>
+        </section>
+
+        <!-- Tab 1: 心理分析 -->
+        <section class="tab-content" id="tab-1">
+            <div class="section">
+                <h2>🧠 心理分析</h2>
+                <p class="section-subtitle">
+                    系統會直接讀取最近五筆心理測驗資料，不需要在這個頁面手動填資料。進入頁面後會立即產生輔導報告。
+                </p>
+                <div id="analysisReport"><div class="no-data">讀取心理測驗資料中...</div></div>
+            </div>
+            <div class="section">
+                <h2>💬 AI 輔導員對話</h2>
+                <p class="section-subtitle">
+                    AI 會以輔導員角色回應，並參考你輸入的內容與最近五筆心理測驗資料。
+                </p>
+                <div id="counselChatBox" class="chat-box"></div>
+                <div class="input-row">
+                    <textarea id="counselInput" placeholder="例：我最近一直熬夜，報告壓力很大怎麼辦？"></textarea>
+                    <button class="btn" onclick="CounselingModule.sendMessage()">送出</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/ai-assistant/js/data-manager.js"></script>
+    <script src="/ai-assistant/js/scheduler.js"></script>
+    <script src="/ai-assistant/js/counseling.js"></script>
+    <script>
+        // ── Auth check ──
+        (function() {
+            const userId = localStorage.getItem('auth_user_id');
+            if (!userId) {
+                window.location.href = '/before_login/login.html';
+            }
+        })();
+
+        // ── Tab switching ──
+        function switchTab(index) {
+            document.querySelectorAll('.tab-btn').forEach((btn, i) => btn.classList.toggle('active', i === index));
+            document.querySelectorAll('.tab-content').forEach((ct, i) => ct.classList.toggle('active', i === index));
+            if (index === 0) ChatModule.refreshCalendar();
+            if (index === 1) CounselingModule.loadPsychReport();
+        }
+
+        // ── Boot ──
+        document.addEventListener('DOMContentLoaded', async function() {
+            ChatModule.init();
+            CounselingModule.init();
+            await ChatModule.refreshCalendar();
+            await CounselingModule.loadPsychReport();
+        });
+    </script>
+</body>
+</html>

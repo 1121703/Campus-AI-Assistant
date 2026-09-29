@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "task_id": "t_0001",
+      "user_id": "u_0001",
+      "title": "範例作業",
+      "course": "範例課程",
+      "due_at": "2026-07-01T23:59:00+08:00",
+      "status": "pending",
+      "completed_at": null,
+      "source": "manual",
+      "note": "這是一筆範例任務",
+      "created_at": "2026-06-01T09:00:00+08:00",
+      "updated_at": "2026-06-01T09:00:00+08:00"
+    }
+  ]
+}

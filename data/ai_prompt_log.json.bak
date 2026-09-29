@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "prompt_id": "ai_1781533793",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "你好",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:29:53+08:00"
+    },
+    {
+      "prompt_id": "ai_1781533816",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "你可以幹嘛",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:30:16+08:00"
+    },
+    {
+      "prompt_id": "ai_1781533948",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "你可以幫我安排任務嗎",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:32:28+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534213",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "你可以幫我安排6/20我要去新竹體育館比賽大概是早上8.30開始",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:36:53+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534263",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "日期時間不對",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:37:43+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534678",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "你好",
+      "response_text": "你好！有什么我可以帮忙的嗎？",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:44:38+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534720",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "可以幫我安排6/20去新竹比羽球的行程嗎8.30開始",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:45:20+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534739",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "時間不對",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:45:39+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534945",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "可以幫我安排6/20去新竹比羽球的行程嗎8.30開始",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:49:05+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534958",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "時間不對",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:49:18+08:00"
+    },
+    {
+      "prompt_id": "ai_1781534985",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "可以幫我安排6/20去新竹比羽球的行程嗎8.30開始",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:49:45+08:00"
+    },
+    {
+      "prompt_id": "ai_1781535006",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "時間不對",
+      "response_text": "我幫你整理成一個排程建議。確認沒問題後，點擊「接受建議」才會新增到行事曆；在接受前不會寫入。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:50:06+08:00"
+    },
+    {
+      "prompt_id": "ai_1781535119",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "幫我安排6/20的羽球比賽8.30開始",
+      "response_text": "這場羽球比賽將於6/20 8:30開始，事件名稱為「羽球比賽」，時間為2026年6月29日00:59至02:29。請點擊「接受建議」按鈕以加入行事曆，若有任何調整請隨時告知！",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:51:59+08:00"
+    },
+    {
+      "prompt_id": "ai_1781535521",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "我6/20要去新竹比羽球比賽8.30左右開始",
+      "response_text": "您的比賽日期為6/20，但系統建議的排程日期為6/29，這可能因解析錯誤導致衝突。請點擊「接受建議」按鈕，將時間調整為正確的6/20 8:30，我們會立即更新排程！",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T22:58:41+08:00"
+    },
+    {
+      "prompt_id": "ai_1781535645",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "我6/20要去新竹比羽球比賽8.30左右開始",
+      "response_text": "事件名稱：新竹羽毛球賽  \n開始時間：2026年6月29日 00:59  \n建議您點擊「接受建議」按鈕，才能將這場比賽加入行事曆。  \n（系統因原時段衝突，已調整為最近可用的時段）",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T23:00:45+08:00"
+    },
+    {
+      "prompt_id": "ai_1781535738",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "時間有誤是6/20",
+      "response_text": "已調整為正確日期：2026年6月20日 00:59  \n請注意，此日期已過，建議確認是否為錯誤或需調整時間。若需進一步協助，歡迎告知！",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T23:02:18+08:00"
+    },
+    {
+      "prompt_id": "ai_1781536009",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "我6/20要去新竹比賽8.30左右打羽球比賽",
+      "response_text": "您的羽球比賽已排程為**6/20 08:30**，請確認是否接受。若同意，請點擊「接受建議」按鈕加入行事曆。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T23:06:49+08:00"
+    },
+    {
+      "prompt_id": "ai_1781536556",
+      "user_id": "u_0001",
+      "purpose": "counseling_chat",
+      "prompt_text": "我壓力好大你覺得根據我的數據看來有什麼解決方案",
+      "response_text": "根據測驗資料，建議您嘗試以下方案：  \n1. **分段學習**：將複雜課題拆成小目標，每完成一目標就給予正向肯定，增強自信心。  \n2. **時間管理**：用「番茄鐘法」（25分鐘學習+5分鐘休息）避免持續壓力，並每日安排10分鐘冥想或輕度運動調節能量。  \n3. **能量維持**：若身心能量偏低，可嘗試每日20分鐘短時休息，透過微運動或深呼吸改善狀態。  \n4. **情緒調適**：記錄情緒日誌，設定具體學習目標（如每小時完成20分鐘），協助提升自律性。  \n\n若壓力持續，建議搭配呼吸練習或輕度運動緩解壓力，並保持規律作息。需要時可尋求專業輔導協助。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-15T23:15:56+08:00"
+    },
+    {
+      "prompt_id": "ai_1781588337",
+      "user_id": "u_0001",
+      "purpose": "chat_general",
+      "prompt_text": "你好",
+      "response_text": "你好！有什么我可以帮你的吗？",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-16T13:38:57+08:00"
+    },
+    {
+      "prompt_id": "ai_1781588365",
+      "user_id": "u_0001",
+      "purpose": "chat_schedule",
+      "prompt_text": "你可以幫我安排6/16下午5.開會 線上會議",
+      "response_text": "好的，您的線上會議安排為6/16 下午5點，請確認是否接受。請點擊「接受建議」按鈕以加入行事曆。",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-16T13:39:25+08:00"
+    },
+    {
+      "prompt_id": "ai_1781588392",
+      "user_id": "u_0001",
+      "purpose": "counseling_chat",
+      "prompt_text": "我現在情緒穩定嗎",
+      "response_text": "目前你的壓力維度為低，但身心能量稍顯不足，建議注意作息與休息以維持能量平衡。若情緒持續穩定，可嘗試透過短休息或輕度運動調節狀態。若有任何情緒波動，可記下日誌協助觀察變化。希望你持續保持健康的生活方式！",
+      "model": "qwen3:1.7b",
+      "created_at": "2026-06-16T13:39:52+08:00"
+    }
+  ]
+}

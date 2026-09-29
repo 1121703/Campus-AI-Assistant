@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>儀表板 | 校園 AI 助手</title>
+  <!-- Fonts loaded by nav.js; add here too for zero-FOUC on fast connections -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Variables ===== */
+    :root {
+      --bg:            #2e3141;
+      --card:          #353849;
+      --card-2:        #3d4051;
+      --card-3:        #454858;
+      --item:          rgba(61, 64, 81, 0.55);
+      --primary:       #4c5c96;
+      --primary-hover: #53639e;
+      --primary-dim:   rgba(76, 92, 150, 0.18);
+      --chart-1:       #4c5c96;
+      --chart-2:       #7985b0;
+      --text:          #ffffff;
+      --muted:         rgba(255, 255, 255, 0.65);
+      --border:        rgba(255, 255, 255, 0.125);
+      --border-light:  rgba(255, 255, 255, 0.06);
+      --danger:        #e87272;
+      --success:       #5bbf8a;
+      --amber:         #f0a84e;
+      --radius:        12px;
+    }
+
+    /* ===== Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans Pro', system-ui, sans-serif;
+      background-color: var(--bg);
+      /* Subtle dot-grid texture */
+      background-image: radial-gradient(rgba(255,255,255,0.028) 1px, transparent 1px);
+      background-size: 26px 26px;
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse-live {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.35; }
+    }
+
+    .fade-in   { animation: fadeInUp 0.5s ease-out both; }
+    .fade-in-1 { animation-delay: 0.08s; }
+    .fade-in-2 { animation-delay: 0.18s; }
+    .fade-in-3 { animation-delay: 0.28s; }
+    .fade-in-4 { animation-delay: 0.38s; }
+
+    /* ===== Background orbs (decorative, fixed) ===== */
+    .bg-orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(90px);
+      z-index: 0;
+      animation: fadeInUp 1.2s ease-out both;
+    }
+    /* top-right: primary blue */
+    .bg-orb-1 {
+      width: 520px; height: 520px;
+      top: -160px; right: -140px;
+      background: radial-gradient(circle, rgba(76,92,150,0.28) 0%, transparent 68%);
+    }
+    /* bottom-left: secondary purple */
+    .bg-orb-2 {
+      width: 420px; height: 420px;
+      bottom: 60px; left: -160px;
+      background: radial-gradient(circle, rgba(121,133,176,0.18) 0%, transparent 68%);
+      animation-delay: 0.3s;
+    }
+    /* centre: very faint fill */
+    .bg-orb-3 {
+      width: 280px; height: 280px;
+      top: 42%; left: 46%;
+      transform: translate(-50%,-50%);
+      background: radial-gradient(circle, rgba(76,92,150,0.07) 0%, transparent 68%);
+      animation-delay: 0.6s;
+    }
+
+    /* ===== Page wrapper (above orbs) ===== */
+    .page {
+      padding-top: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      max-width: 1200px; margin: 0 auto;
+      padding: 44px 22px 32px;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 28px; flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    /* Soft glow behind hero text */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40px; left: -60px;
+      width: 360px; height: 260px;
+      background: radial-gradient(ellipse, rgba(76,92,150,0.22) 0%, transparent 70%);
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+
+    .hero-text { position: relative; }
+
+    .hero-text .pre {
+      color: var(--muted); font-size: 0.9375rem; margin-bottom: 6px;
+    }
+
+    .hero-text h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2rem; font-weight: 700;
+      line-height: 1.2; margin-bottom: 12px;
+    }
+
+    .hero-text .sub {
+      color: var(--muted); font-size: 0.9375rem; max-width: 380px;
+    }
+
+    /* Stat cards row */
+    .hero-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .stat-card {
+      background: rgba(53,56,73,0.65);
+      border: 1px solid var(--border-light);
+      border-radius: 11px;
+      padding: 14px 18px;
+      text-align: center; min-width: 94px;
+      position: relative; overflow: hidden;
+      transition: border-color 0.25s, transform 0.2s;
+    }
+    .stat-card:hover { border-color: rgba(76,92,150,0.4); transform: translateY(-2px); }
+
+    /* Coloured accent bar at top of each stat card */
+    .stat-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; border-radius: 11px 11px 0 0;
+    }
+    .stat-card.streak::before  { background: linear-gradient(90deg, #f0a84e, #f07a4e); }
+    .stat-card.done::before    { background: linear-gradient(90deg, #5bbf8a, #4db87a); }
+    .stat-card.rate::before    { background: linear-gradient(90deg, #4c5c96, #7985b0); }
+
+    .stat-card-icon {
+      font-size: 1rem; margin-bottom: 4px; line-height: 1;
+    }
+    .stat-card.streak .stat-card-icon { color: var(--amber); }
+    .stat-card.done   .stat-card-icon { color: var(--success); }
+    .stat-card.rate   .stat-card-icon { color: var(--chart-2); }
+
+    .stat-card-value {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem; font-weight: 700; line-height: 1.15;
+    }
+    .stat-card.streak .stat-card-value { color: var(--amber); }
+    .stat-card.done   .stat-card-value { color: var(--success); }
+    .stat-card.rate   .stat-card-value { color: var(--chart-2); }
+
+    .stat-card-label {
+      font-size: 0.72rem; color: var(--muted); margin-top: 3px;
+    }
+
+    /* ===== Main grid ===== */
+    .main { padding: 0 22px 56px; }
+
+    .grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 20px; align-items: start;
+    }
+
+    .col { display: flex; flex-direction: column; gap: 20px; }
+
+    @media (max-width: 880px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero { flex-direction: column; align-items: flex-start; }
+      .hero-text h1 { font-size: 1.55rem; }
+    }
+
+    /* ===== Card ===== */
+    .card {
+      background: rgba(53,56,73,0.72);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08), 0 16px 32px rgba(0,0,0,0.14);
+      overflow: hidden;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .card:hover {
+      border-color: rgba(76,92,150,0.28);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 20px 40px rgba(0,0,0,0.18), 0 0 0 1px rgba(76,92,150,0.08);
+    }
+
+    .card-header {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 13px 17px;
+      border-bottom: 1px solid var(--border-light);
+      /* Subtle top shimmer */
+      background: linear-gradient(180deg, rgba(76,92,150,0.06) 0%, transparent 100%);
+    }
+
+    .card-title {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700; font-size: 0.8rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .card-title svg { width: 15px; height: 15px; color: var(--primary); flex-shrink: 0; }
+
+    .card-toggle {
+      font-size: 0.7rem; color: var(--muted);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 5px; padding: 2px 9px;
+      cursor: pointer; transition: all 0.2s;
+      text-decoration: none; white-space: nowrap;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 0.04em;
+    }
+    .card-toggle:hover { background: var(--card-2); color: var(--text); border-color: var(--primary); }
+
+    .card.is-collapsed .card-body { display: none; }
+    .card-body { padding: 15px 17px; }
+
+    /* ===== Toggle completed ===== */
+    .toggle-completed-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 13px; font-size: 0.875rem; color: var(--muted);
+    }
+    .toggle-completed-row input[type="checkbox"] {
+      width: 14px; height: 14px;
+      accent-color: var(--primary); cursor: pointer;
+    }
+    .toggle-completed-row label { cursor: pointer; }
+
+    /* ===== Data list (task / suggestion items by JS) ===== */
+    .data-list {
+      list-style: none; margin: 0; padding: 0;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+
+    .data-list li {
+      border: 1px solid var(--border-light);
+      background: var(--item);
+      padding: 10px 13px; border-radius: 9px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .data-list li:hover { border-color: rgba(76,92,150,0.35); background: rgba(61,64,81,0.75); }
+
+    .data-list li.empty-state {
+      background: transparent; border: 0; padding: 6px 0;
+    }
+
+    /* .task-item button reset (rendered by dashboard.js) */
+    .task-item {
+      display: block !important; width: 100% !important;
+      text-align: left !important; background: transparent !important;
+      border: none !important; padding: 0 !important;
+      color: inherit !important; font-family: inherit !important;
+      font-size: inherit !important; font-weight: inherit !important;
+      letter-spacing: normal !important; text-transform: none !important;
+      cursor: pointer !important; line-height: 1.55 !important;
+    }
+    .task-item:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: 4px; }
+
+    .data-list .title  { font-weight: 600; margin-bottom: 3px; }
+    .data-list .meta   { color: var(--muted); font-size: 0.84em; margin-top: 2px; }
+
+    /* Badge + Pill */
+    .badge { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 0.7em; background: var(--card-3); color: var(--text); }
+    .badge.success { background: var(--primary); }
+    .pill           { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 0.7em; background: var(--card-2); color: var(--muted); }
+    .pill.secondary { background: var(--chart-2); color: #fff; }
+
+    /* ===== Suggestion item (rendered by dashboard.js) ===== */
+    .suggestion-item {
+      display: grid; grid-template-columns: 13px 1fr auto;
+      align-items: center; gap: 10px;
+    }
+    .suggestion-check {
+      width: 12px; height: 12px; border-radius: 50%;
+      border: 1px solid var(--border); flex-shrink: 0;
+    }
+    .inline-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    /* ===== Buttons ===== */
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 6px 15px; border-radius: 5px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.77rem; font-weight: 700;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      background: transparent; color: var(--text);
+      cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    }
+    .button:hover { background: var(--card-2); border-color: var(--primary); color: var(--text); }
+    .button.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .button.primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+    .button.small { padding: 3px 9px; font-size: 0.68rem; }
+
+    /* ===== Timer card ===== */
+    .timer-display { text-align: center; padding: 18px 0 14px; }
+
+    /* Live indicator dot */
+    .live-dot {
+      display: inline-block; width: 7px; height: 7px;
+      border-radius: 50%; background: var(--success);
+      margin-right: 6px; vertical-align: middle;
+      animation: pulse-live 1.8s ease-in-out infinite;
+    }
+
+    .timer-value {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2.6rem; font-weight: 700; letter-spacing: 0.08em;
+      background: linear-gradient(135deg, #4c5c96, #7985b0);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .timer-sub { font-size: 0.83rem; color: var(--muted); margin-top: 7px; }
+
+    .timer-progress {
+      height: 5px; background: rgba(255,255,255,0.09);
+      border-radius: 999px; overflow: hidden; margin: 10px 0 6px;
+    }
+    .timer-progress-fill {
+      height: 100%; width: 0%;
+      background: linear-gradient(90deg, var(--chart-1), var(--chart-2));
+      transition: width 0.3s ease;
+      border-radius: 999px;
+    }
+
+    .timer-hint { font-size: 0.78rem; color: var(--muted); text-align: center; }
+
+    /* ===== Charts ===== */
+    .chart-section { margin-top: 17px; }
+    .chart-section:first-child { margin-top: 0; }
+
+    .chart-label {
+      font-size: 0.78rem; color: var(--muted);
+      margin-bottom: 7px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+
+    .chart-canvas { width: 100%; height: 130px; display: block; }
+
+    .chart-days {
+      display: flex; justify-content: space-between;
+      font-size: 0.7rem; color: var(--muted); margin-top: 5px;
+    }
+
+    .stats-summary {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+      margin-top: 15px; padding-top: 13px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .summary-item {
+      text-align: center; background: var(--item);
+      border-radius: 9px; padding: 11px;
+      transition: background 0.2s;
+    }
+    .summary-item:hover { background: rgba(61,64,81,0.75); }
+
+    .summary-value {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem; font-weight: 700;
+    }
+    .summary-label { font-size: 0.69rem; color: var(--muted); margin-top: 3px; }
+
+    /* ===== Misc ===== */
+    .muted      { color: var(--muted); }
+    .empty-state { color: var(--muted); font-size: 0.875rem; font-style: italic; }
+    [hidden]    { display: none !important; }
+
+    /* ===== Modal ===== */
+    .modal {
+      position: fixed; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 300;
+    }
+    .modal.is-hidden { display: none; }
+
+    .modal-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(5px);
+    }
+
+    .modal-card {
+      position: relative;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      max-width: 500px; width: calc(100% - 32px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.12), 0 28px 56px rgba(0,0,0,0.4);
+    }
+
+    .modal-card h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.78rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--primary); margin-bottom: 13px;
+    }
+
+    .modal-title   { font-weight: 600; font-size: 1rem; margin-bottom: 5px; }
+    .modal-actions { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative background orbs (behind everything) -->
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-3" aria-hidden="true"></div>
+
+  <!-- nav.js injects header + sidebar here -->
+
+  <!-- Page -->
+  <div class="page">
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <div class="hero-text">
+        <p class="pre" data-role="greeting">Good Morning</p>
+        <h1>準備好 <span class="grad">衝刺</span> 今天了嗎？</h1>
+        <p class="sub">管理待辦、查看 AI 建議、追蹤學習進度。</p>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card streak">
+          <div class="stat-card-value" data-role="stat-streak">0</div>
+          <div class="stat-card-label">連續天數</div>
+        </div>
+        <div class="stat-card done">
+          <div class="stat-card-value" data-role="stat-completed">0</div>
+          <div class="stat-card-label">已完成任務</div>
+        </div>
+        <div class="stat-card rate">
+          <div class="stat-card-value" data-role="stat-completion">0%</div>
+          <div class="stat-card-label">平均完成率</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main grid -->
+    <div class="main">
+      <div class="grid">
+
+        <!-- Left column -->
+        <div class="col">
+
+          <!-- Tasks card -->
+          <article class="card fade-in fade-in-1" data-card="tasks">
+            <div class="card-header">
+              <div class="card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="6" height="6" rx="1"/>
+                  <path d="m3 17 2 2 4-4"/>
+                  <path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/>
+                </svg>
+                待辦提醒
+              </div>
+              <a href="#" class="card-toggle" data-action="toggle-card" data-card="tasks">收合</a>
+            </div>
+            <div class="card-body">
+              <div class="toggle-completed-row">
+                <input type="checkbox" id="toggle-completed">
+                <label for="toggle-completed">顯示已完成</label>
+              </div>
+              <ul class="data-list" data-role="task-list"></ul>
+            </div>
+          </article>
+
+          <!-- Suggestions card -->
+          <article class="card fade-in fade-in-2" data-card="suggestions">
+            <div class="card-header">
+              <div class="card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#7985b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                  <path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
+                </svg>
+                Daily Suggest&nbsp;<span class="muted" style="font-weight:400;text-transform:none;letter-spacing:normal;font-family:'Source Sans Pro',sans-serif;" data-role="suggestion-meta"></span>
+              </div>
+              <a href="#" class="card-toggle" data-action="toggle-card" data-card="suggestions">收合</a>
+            </div>
+            <div class="card-body">
+              <ul class="data-list" data-role="suggestion-list"></ul>
+            </div>
+          </article>
+
+        </div><!-- /left col -->
+
+        <!-- Right column -->
+        <div class="col">
+
+          <!-- Timer card -->
+          <article class="card fade-in fade-in-3" data-card="login-timer">
+            <div class="card-header">
+              <div class="card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                登入計時
+              </div>
+              <a href="#" class="card-toggle" data-action="toggle-card" data-card="login-timer">收合</a>
+            </div>
+            <div class="card-body">
+              <div class="timer-display">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span class="timer-value" data-role="login-timer">00:00:00</span>
+                <p class="timer-sub">本次登入時長</p>
+              </div>
+              <div class="timer-progress">
+                <div class="timer-progress-fill" data-role="login-progress"></div>
+              </div>
+              <p class="timer-hint" data-role="break-hint">下一次建議休息：60 分鐘</p>
+            </div>
+          </article>
+
+          <!-- Weekly stats card -->
+          <article class="card fade-in fade-in-4" data-card="weekly-stats">
+            <div class="card-header">
+              <div class="card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+                </svg>
+                每週統計
+              </div>
+              <a href="#" class="card-toggle" data-action="toggle-card" data-card="weekly-stats">收合</a>
+            </div>
+            <div class="card-body">
+              <div class="chart-section">
+                <p class="chart-label">登入時長（分鐘）</p>
+                <canvas id="login-chart" class="chart-canvas"></canvas>
+                <div class="chart-days">
+                  <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+                </div>
+              </div>
+              <div class="chart-section">
+                <p class="chart-label">任務完成率（%）</p>
+                <canvas id="completion-chart" class="chart-canvas"></canvas>
+                <div class="chart-days">
+                  <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+                </div>
+              </div>
+              <div class="stats-summary">
+                <div class="summary-item">
+                  <div class="summary-value grad" data-role="weekly-total">0h</div>
+                  <div class="summary-label">本週總時數</div>
+                </div>
+                <div class="summary-item">
+                  <div class="summary-value" style="color:var(--chart-2);" data-role="weekly-completion">0%</div>
+                  <div class="summary-label">平均完成率</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /right col -->
+      </div><!-- /grid -->
+    </div><!-- /main -->
+  </div><!-- /page -->
+
+  <!-- Task completion modal -->
+  <div id="task-modal" class="modal is-hidden" aria-hidden="true" hidden>
+    <div class="modal-overlay" data-action="modal-close"></div>
+    <div class="modal-card">
+      <h3>完成待辦</h3>
+      <p class="modal-title" data-role="task-modal-title"></p>
+      <p class="muted" data-role="task-modal-meta"></p>
+      <p class="muted" data-role="task-modal-note"></p>
+      <div class="modal-actions">
+        <a href="#" class="button primary" data-action="task-complete">完成</a>
+        <a href="#" class="button" data-action="modal-close">取消</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Component: shared nav (header + sidebar) -->
+  <script src="assets/js/nav.js"></script>
+  <!-- App logic -->
+  <script src="assets/js/app-core.js"></script>
+  <script>if (!App.requireAuth()) { document.body.innerHTML = ''; throw new Error('unauthenticated'); }</script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

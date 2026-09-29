@@ -1,0 +1,3918 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "question_id": "q_e88ef0_0",
+      "text": "當學業壓力感到沉重時，你通常會怎麼做？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細計畫，一步步完成",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "感到焦慮，但不知道從何開始，結果拖延",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "暫時放下，做些喜歡的事來放鬆",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "D",
+          "text": "向同學或老師尋求幫助和建議",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "learning",
+        "coping"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_bda86255",
+      "created_at": "2026-06-07T01:23:55+08:00"
+    },
+    {
+      "question_id": "q_0f480f_1",
+      "text": "看到同學在學業或社團活動中表現出色，你的感受通常是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "受到激勵，也想努力提升自己",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "感到焦慮，擔心自己不夠好",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "不太在意，專注於自己的步調",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "感到有些沮喪，甚至想迴避比較",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "mental_health",
+        "social_pressure"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_bda86255",
+      "created_at": "2026-06-07T01:23:55+08:00"
+    },
+    {
+      "question_id": "q_f23070_2",
+      "text": "在期末考或專案截稿前，你的睡眠習慣通常是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "犧牲睡眠時間，熬夜衝刺",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "盡量維持正常作息，確保充足睡眠",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠時間縮短，但會找時間小憩補眠",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "雖然想睡，但躺在床上也難以入睡，腦袋停不下來",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "energy",
+        "self_care"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_bda86255",
+      "created_at": "2026-06-07T01:23:55+08:00"
+    },
+    {
+      "question_id": "q_15336b_3",
+      "text": "當你遇到學習上的困難或情緒低落時，你會如何處理？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "嘗試自己解決，不到萬不得已不求助",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "立即向信任的朋友、家人或師長傾訴",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "獨自承受，覺得這是自己的事",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "尋找學校的心理諮詢或輔導資源",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "mental_health",
+        "coping",
+        "support_seeking"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_bda86255",
+      "created_at": "2026-06-07T01:23:55+08:00"
+    },
+    {
+      "question_id": "q_ec77fa_4",
+      "text": "對於畢業後的未來，例如升學或就業，你的感受是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "充滿期待，已規劃好方向",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "B",
+          "text": "有些焦慮，但相信自己會找到出路",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "感到茫然和壓力，對未來感到不確定",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "盡量不去想，活在當下就好",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "future",
+        "anxiety"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_bda86255",
+      "created_at": "2026-06-07T01:23:55+08:00"
+    },
+    {
+      "question_id": "q_9f8a68_0",
+      "text": "當你面對繁重的課業或考試壓力時，你通常會怎麼做？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "感到焦慮不安，難以專注。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "努力規劃時間，逐一解決。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "暫時放下，做些讓自己放鬆的事。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "D",
+          "text": "尋求同學或老師的幫助。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "coping"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a378308",
+      "created_at": "2026-06-07T23:33:00+08:00"
+    },
+    {
+      "question_id": "q_811bd6_1",
+      "text": "在學習壓力大的時期，你的睡眠狀況通常如何？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "難以入睡，或半夜易醒，醒來後感到疲憊。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "雖然有壓力，但仍能保持規律睡眠。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠時間變少，但仍感覺足夠。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "會刻意熬夜趕工，導致睡眠不足。",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "well-being",
+        "sleep"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a378308",
+      "created_at": "2026-06-07T23:33:00+08:00"
+    },
+    {
+      "question_id": "q_debf82_2",
+      "text": "當你感到學習壓力過大時，你傾向於？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "獨自承受，不願與人提及。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "找朋友或家人傾訴，尋求建議。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "轉移注意力，從事娛樂活動。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "嘗試自己分析問題，找到解決方案。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "social-support",
+        "coping"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a378308",
+      "created_at": "2026-06-07T23:33:00+08:00"
+    },
+    {
+      "question_id": "q_0a1cad_3",
+      "text": "在學業壓力高峰期，你是否曾出現以下身體不適？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "經常頭痛、腸胃不適或肌肉緊繃。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "食慾不振或暴飲暴食。",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "感到疲倦，但沒有明顯生理不適。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "身體狀況良好，沒有明顯不適。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "physical-health",
+        "symptoms"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a378308",
+      "created_at": "2026-06-07T23:33:00+08:00"
+    },
+    {
+      "question_id": "q_d50574_4",
+      "text": "你認為自己處理學習壓力的能力如何？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "常常感到無助，不知道如何應對。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "能夠有效管理，並找到適合自己的紓壓方式。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "有時有效，有時則感到力不從心。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "會嘗試各種方法，但效果不一。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "self-efficacy",
+        "coping"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a378308",
+      "created_at": "2026-06-07T23:33:00+08:00"
+    },
+    {
+      "question_id": "q_21278e_0",
+      "text": "當你面對多項學業截止日期逼近時，你最常有的感受是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "感到焦慮和不知所措，不知道從何開始。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "雖然有壓力，但能有效規劃時間並逐步完成。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "傾向於拖延，直到最後一刻才匆忙趕工。",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "不太擔心，相信自己總能應付。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "academic",
+        "time-management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e8769569",
+      "created_at": "2026-06-07T23:33:51+08:00"
+    },
+    {
+      "question_id": "q_614ecb_1",
+      "text": "當學業壓力讓你感到疲憊不堪時，你會選擇哪種方式來放鬆？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "繼續努力學習，認為休息是浪費時間。",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "找朋友傾訴或參與社交活動。",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "獨自一人做自己喜歡的事，例如聽音樂、看書或玩遊戲。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "睡覺或小憩片刻，讓身體得到充分休息。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "coping",
+        "well-being"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e8769569",
+      "created_at": "2026-06-07T23:33:51+08:00"
+    },
+    {
+      "question_id": "q_cc8537_2",
+      "text": "如果我在一次重要的考試中表現不如預期，我的反應會是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "感到非常沮喪和自我懷疑，對未來感到擔憂。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "分析失誤原因，並制定改進計畫。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "暫時逃避現實，不想面對結果。",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "認為這只是偶爾的失誤，不會太放在心上。",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "academic",
+        "resilience"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e8769569",
+      "created_at": "2026-06-07T23:33:51+08:00"
+    },
+    {
+      "question_id": "q_5a852f_3",
+      "text": "你如何看待學業與個人生活（例如興趣、社交）之間的平衡？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "學業是第一位的，犧牲個人生活是必要的。",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "努力在兩者之間找到平衡，但學業優先。",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "認為兩者都重要，會積極安排時間兼顧。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "D",
+          "text": "個人生活更重要，學業只要過得去就好。",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "work-life-balance",
+        "well-being"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e8769569",
+      "created_at": "2026-06-07T23:33:51+08:00"
+    },
+    {
+      "question_id": "q_dd7b06_4",
+      "text": "當你感覺學業壓力或情緒困擾超出自己負荷時，你傾向於？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "獨自承受，不願向他人尋求幫助。",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "找信任的朋友或家人傾訴。",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "考慮向學校輔導中心或專業人士尋求協助。",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        },
+        {
+          "id": "D",
+          "text": "透過轉移注意力（如玩樂）來暫時忘卻煩惱。",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "help-seeking",
+        "mental-health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e8769569",
+      "created_at": "2026-06-07T23:33:51+08:00"
+    },
+    {
+      "question_id": "q_f5e0d2_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻處理",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "與朋友討論",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e427c0ed",
+      "created_at": "2026-06-15T15:40:59+08:00"
+    },
+    {
+      "question_id": "q_97f9b6_1",
+      "text": "面對考試時的壓力如何處理？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細計畫",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "減少準備時間",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "放棄複習",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "time_management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e427c0ed",
+      "created_at": "2026-06-15T15:40:59+08:00"
+    },
+    {
+      "question_id": "q_0d90b8_2",
+      "text": "對學習內容感到不滿時的反應？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動問問題",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "拒絕學習",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "忽略內容",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "self_awareness"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e427c0ed",
+      "created_at": "2026-06-15T15:40:59+08:00"
+    },
+    {
+      "question_id": "q_30bf82_3",
+      "text": "社交壓力對你影響如何？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動參與活動",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "避免社交互動",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "與他人競爭",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "social_pressure"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e427c0ed",
+      "created_at": "2026-06-15T15:40:59+08:00"
+    },
+    {
+      "question_id": "q_f09a82_4",
+      "text": "睡眠質量影響學習效率嗎？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "改善睡眠習慣",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "忽略睡眠",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "保持原狀",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "sleep_quality"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_e427c0ed",
+      "created_at": "2026-06-15T15:40:59+08:00"
+    },
+    {
+      "question_id": "q_9cd209_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻處理",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_438cc24d",
+      "created_at": "2026-06-15T15:42:44+08:00"
+    },
+    {
+      "question_id": "q_66445e_1",
+      "text": "面對壓力時最常選擇的策略是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "mental health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_438cc24d",
+      "created_at": "2026-06-15T15:42:44+08:00"
+    },
+    {
+      "question_id": "q_2deabb_2",
+      "text": "學習效率受壓力影響時的反應？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "集中注意力",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "分心",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "休息",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_438cc24d",
+      "created_at": "2026-06-15T15:42:44+08:00"
+    },
+    {
+      "question_id": "q_693ba9_3",
+      "text": "面對壓力時最有效的應對方式是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "積極應對",
+          "weights": {
+            "stress": 4,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "逃避",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "自我反思",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress",
+        "mental health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_438cc24d",
+      "created_at": "2026-06-15T15:42:44+08:00"
+    },
+    {
+      "question_id": "q_0a024f_4",
+      "text": "情緒管理時最常使用的方法是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "放松",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "压抑",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "mental health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_438cc24d",
+      "created_at": "2026-06-15T15:42:44+08:00"
+    },
+    {
+      "question_id": "q_374e58_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻處理",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_760ebb0b",
+      "created_at": "2026-06-15T15:44:55+08:00"
+    },
+    {
+      "question_id": "q_30ab0a_1",
+      "text": "面對挑戰時，你更傾向於？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "接受挑戰",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "逃避問題",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_760ebb0b",
+      "created_at": "2026-06-15T15:44:55+08:00"
+    },
+    {
+      "question_id": "q_1abe9f_2",
+      "text": "感到焦慮時，你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "深呼吸放鬆",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "繼續做下去",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_760ebb0b",
+      "created_at": "2026-06-15T15:44:55+08:00"
+    },
+    {
+      "question_id": "q_4f4b19_3",
+      "text": "遇到困難時，你更可能？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "獨自解決",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "mental health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_760ebb0b",
+      "created_at": "2026-06-15T15:44:55+08:00"
+    },
+    {
+      "question_id": "q_fce1e5_4",
+      "text": "面對壓力時，你更傾向於？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "調整心態",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "改變環境",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "mental health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_760ebb0b",
+      "created_at": "2026-06-15T15:44:55+08:00"
+    },
+    {
+      "question_id": "q_880a5f_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_4d66a906",
+      "created_at": "2026-06-15T15:55:32+08:00"
+    },
+    {
+      "question_id": "q_b16d6a_1",
+      "text": "學習壓力是否影響你的睡眠？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "非常影響",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 2,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "沒有影響",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全不影響",
+          "weights": {
+            "stress": 1,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_4d66a906",
+      "created_at": "2026-06-15T15:55:32+08:00"
+    },
+    {
+      "question_id": "q_b6e042_2",
+      "text": "學習壓力是否影響你的注意力？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "非常影響",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 2,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "沒有影響",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全不影響",
+          "weights": {
+            "stress": 1,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_4d66a906",
+      "created_at": "2026-06-15T15:55:32+08:00"
+    },
+    {
+      "question_id": "q_e63adb_3",
+      "text": "學習壓力是否影響你的情緒？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "非常影響",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "沒有影響",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全不影響",
+          "weights": {
+            "stress": 1,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_4d66a906",
+      "created_at": "2026-06-15T15:55:32+08:00"
+    },
+    {
+      "question_id": "q_5799f3_4",
+      "text": "學習壓力是否影響你的動力？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "非常影響",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "沒有影響",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全不影響",
+          "weights": {
+            "stress": 1,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_4d66a906",
+      "created_at": "2026-06-15T15:55:32+08:00"
+    },
+    {
+      "question_id": "q_0b6da9_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_d0cd50fd",
+      "created_at": "2026-06-15T15:57:39+08:00"
+    },
+    {
+      "question_id": "q_01e60b_1",
+      "text": "面對困難時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_d0cd50fd",
+      "created_at": "2026-06-15T15:57:39+08:00"
+    },
+    {
+      "question_id": "q_a8c7b5_2",
+      "text": "感到不安時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_d0cd50fd",
+      "created_at": "2026-06-15T15:57:39+08:00"
+    },
+    {
+      "question_id": "q_fc304c_3",
+      "text": "遇到挫折時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_d0cd50fd",
+      "created_at": "2026-06-15T15:57:39+08:00"
+    },
+    {
+      "question_id": "q_5d25e9_4",
+      "text": "感到焦慮時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_d0cd50fd",
+      "created_at": "2026-06-15T15:57:39+08:00"
+    },
+    {
+      "question_id": "q_e84800_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_9902796c",
+      "created_at": "2026-06-15T15:58:32+08:00"
+    },
+    {
+      "question_id": "q_16c3f4_1",
+      "text": "當感到焦慮時，你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "吃東西緩解",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "睡覺",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "聽音樂",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "逃避",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_9902796c",
+      "created_at": "2026-06-15T15:58:32+08:00"
+    },
+    {
+      "question_id": "q_b3a769_2",
+      "text": "面對挑戰時，你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "分析問題",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立即行動",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "詢問他人",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "拒絕挑戰",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_9902796c",
+      "created_at": "2026-06-15T15:58:32+08:00"
+    },
+    {
+      "question_id": "q_40ae12_3",
+      "text": "當遇到困難時，你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "自行解決",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "看書學習",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "保持現狀",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_9902796c",
+      "created_at": "2026-06-15T15:58:32+08:00"
+    },
+    {
+      "question_id": "q_035a8b_4",
+      "text": "在感到疲倦時，你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "休息",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "增加學習時間",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "與同學討論",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_9902796c",
+      "created_at": "2026-06-15T15:58:32+08:00"
+    },
+    {
+      "question_id": "q_d2ee66_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a937a5e",
+      "created_at": "2026-06-15T16:02:37+08:00"
+    },
+    {
+      "question_id": "q_fd9f7c_1",
+      "text": "面對學業壓力時，你最常選擇？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "將壓力分擔給家人",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "嘗試調整學習方法",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "與同學討論解決",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全放棄努力",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a937a5e",
+      "created_at": "2026-06-15T16:02:37+08:00"
+    },
+    {
+      "question_id": "q_b5f0a1_2",
+      "text": "壓力最影響你的哪方面？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "學習效率",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "情緒穩定",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠質量",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "社交關係",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a937a5e",
+      "created_at": "2026-06-15T16:02:37+08:00"
+    },
+    {
+      "question_id": "q_cc93bb_3",
+      "text": "壓力導致你最常出現的症狀是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "焦慮",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "疲倦",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "頭痛",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "注意力不集中",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a937a5e",
+      "created_at": "2026-06-15T16:02:37+08:00"
+    },
+    {
+      "question_id": "q_7e7cb4_4",
+      "text": "壓力對你長期影響最明顯的是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "學業成績下降",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "情緒波動增加",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠障礙",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "社交退縮",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6a937a5e",
+      "created_at": "2026-06-15T16:02:37+08:00"
+    },
+    {
+      "question_id": "q_995ae6_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6b78b72d",
+      "created_at": "2026-06-15T16:05:01+08:00"
+    },
+    {
+      "question_id": "q_7be69f_1",
+      "text": "面對繁重課業時，你會如何調整？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細學習計畫",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "分階段完成目標",
+          "weights": {
+            "stress": 2,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "減少學習時間",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全放棄目標",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6b78b72d",
+      "created_at": "2026-06-15T16:05:01+08:00"
+    },
+    {
+      "question_id": "q_d68013_2",
+      "text": "壓力最影響你哪方面？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "學習效率",
+          "weights": {
+            "stress": 4,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "情緒穩定",
+          "weights": {
+            "stress": 2,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠品質",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "社交互動",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6b78b72d",
+      "created_at": "2026-06-15T16:05:01+08:00"
+    },
+    {
+      "question_id": "q_5c0967_3",
+      "text": "壓力會導致你怎麼樣？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "更專注於學習",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "感到焦慮不安",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "想辦法解決問題",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全失去動力",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6b78b72d",
+      "created_at": "2026-06-15T16:05:01+08:00"
+    },
+    {
+      "question_id": "q_b7ce92_4",
+      "text": "壓力下你最常選擇的應對方式是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "積極應對",
+          "weights": {
+            "stress": 4,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "逃避問題",
+          "weights": {
+            "stress": 2,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "不動搖繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_6b78b72d",
+      "created_at": "2026-06-15T16:05:01+08:00"
+    },
+    {
+      "question_id": "q_8d2069_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_df54174b",
+      "created_at": "2026-06-15T16:05:34+08:00"
+    },
+    {
+      "question_id": "q_87e942_1",
+      "text": "面對困難時你會如何應對？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即採取行動",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "分析問題後再處理",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "尋求幫助",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "避免參與",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_df54174b",
+      "created_at": "2026-06-15T16:05:34+08:00"
+    },
+    {
+      "question_id": "q_fd7635_2",
+      "text": "壓力影響你的情緒狀態嗎？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "不影響",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "很影響",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全影響",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_df54174b",
+      "created_at": "2026-06-15T16:05:34+08:00"
+    },
+    {
+      "question_id": "q_a425e0_3",
+      "text": "你如何管理自己的壓力？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動尋求支援",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "嘗試自我調節",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "忽略壓力",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "不做任何事",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_df54174b",
+      "created_at": "2026-06-15T16:05:34+08:00"
+    },
+    {
+      "question_id": "q_62d2ce_4",
+      "text": "壓力對你學業表現有影響嗎？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "沒有影響",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "有點影響",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "較大影響",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "非常影響",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_df54174b",
+      "created_at": "2026-06-15T16:05:34+08:00"
+    },
+    {
+      "question_id": "q_3c40a2_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ae5eebd5",
+      "created_at": "2026-06-15T16:05:50+08:00"
+    },
+    {
+      "question_id": "q_b86da0_1",
+      "text": "面對考試壓力時，你會如何調整？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "提前預習並強化弱項",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "與同學討論解題方法",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "觀看教學影片補強知識",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "放棄複習重點集中休息",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ae5eebd5",
+      "created_at": "2026-06-15T16:05:50+08:00"
+    },
+    {
+      "question_id": "q_94b1f5_2",
+      "text": "壓力過大時，你會選擇？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "暫時離開學習環境",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "與家人溝通需求",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "嘗試自我調適",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "持續強迫自己完成任務",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ae5eebd5",
+      "created_at": "2026-06-15T16:05:50+08:00"
+    },
+    {
+      "question_id": "q_2e6f72_3",
+      "text": "面對困難時，你會如何應對？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即嘗試解決問題",
+          "weights": {
+            "stress": 4,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "尋求專業幫助",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "與同學合作討論",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略問題繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ae5eebd5",
+      "created_at": "2026-06-15T16:05:50+08:00"
+    },
+    {
+      "question_id": "q_a6414f_4",
+      "text": "壓力導致情緒低落時，你會做嗎？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動尋求支持",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "自我安慰並繼續行動",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "暫時放棄並休息",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "拒絕幫助並強行完成",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ae5eebd5",
+      "created_at": "2026-06-15T16:05:50+08:00"
+    },
+    {
+      "question_id": "q_38510c_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ecea2ffc",
+      "created_at": "2026-06-15T16:10:39+08:00"
+    },
+    {
+      "question_id": "q_508e30_1",
+      "text": "與同學互動時的態度是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動尋求同學協助",
+          "weights": {
+            "support": 4,
+            "loneliness": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "與同學討論問題",
+          "weights": {
+            "support": 3,
+            "loneliness": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "避免與同學交談",
+          "weights": {
+            "support": 2,
+            "loneliness": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "只與家人談話",
+          "weights": {
+            "support": 1,
+            "loneliness": 5
+          }
+        }
+      ],
+      "tags": [
+        "support"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ecea2ffc",
+      "created_at": "2026-06-15T16:10:39+08:00"
+    },
+    {
+      "question_id": "q_d55198_2",
+      "text": "時間管理方式是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細學習計畫",
+          "weights": {
+            "organization": 5,
+            "distraction": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "隨機安排學習時間",
+          "weights": {
+            "organization": 2,
+            "distraction": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "使用時間管理工具",
+          "weights": {
+            "organization": 3,
+            "distraction": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "分散注意力學習",
+          "weights": {
+            "organization": 1,
+            "distraction": 5
+          }
+        }
+      ],
+      "tags": [
+        "organization"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ecea2ffc",
+      "created_at": "2026-06-15T16:10:39+08:00"
+    },
+    {
+      "question_id": "q_6fcd08_3",
+      "text": "身體狀況如何？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "經常熬夜學習",
+          "weights": {
+            "fatigue": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "保持規律作息",
+          "weights": {
+            "fatigue": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "作息不規則",
+          "weights": {
+            "fatigue": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "定期運動保持健康",
+          "weights": {
+            "fatigue": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "fatigue"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ecea2ffc",
+      "created_at": "2026-06-15T16:10:39+08:00"
+    },
+    {
+      "question_id": "q_3a18e1_4",
+      "text": "面對失敗時的態度是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "接受並學習經驗",
+          "weights": {
+            "resilience": 4,
+            "guilt": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "自我批判導致焦慮",
+          "weights": {
+            "resilience": 2,
+            "guilt": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "調整心態重新開始",
+          "weights": {
+            "resilience": 3,
+            "guilt": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "逃避問題不處理",
+          "weights": {
+            "resilience": 1,
+            "guilt": 4
+          }
+        }
+      ],
+      "tags": [
+        "resilience"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_ecea2ffc",
+      "created_at": "2026-06-15T16:10:39+08:00"
+    },
+    {
+      "question_id": "q_afc7b5_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_05d47178",
+      "created_at": "2026-06-15T16:14:42+08:00"
+    },
+    {
+      "question_id": "q_2db03d_1",
+      "text": "與同學互動時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動尋求幫助",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "保持距離避免衝突",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "積極參與討論",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略他人意見",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "relationship"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_05d47178",
+      "created_at": "2026-06-15T16:14:42+08:00"
+    },
+    {
+      "question_id": "q_60cb3e_2",
+      "text": "安排學習計畫時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細計畫",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "隨意安排時間",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "使用時間管理工具",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略計畫持續學習",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "time_management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_05d47178",
+      "created_at": "2026-06-15T16:14:42+08:00"
+    },
+    {
+      "question_id": "q_242f0a_3",
+      "text": "面對熬夜時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動調整作息",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "保持良好睡眠習慣",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "過度使用手機補眠",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略健康影響",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "physical_health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_05d47178",
+      "created_at": "2026-06-15T16:14:42+08:00"
+    },
+    {
+      "question_id": "q_038730_4",
+      "text": "面對失敗時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "接受現實並嘗試再戰",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "自我批判否定自己",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "積極尋找改善方法",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "選擇逃避問題",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "emotional_regulation"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_05d47178",
+      "created_at": "2026-06-15T16:14:42+08:00"
+    },
+    {
+      "question_id": "q_6b5096_0",
+      "text": "遇到壓力時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "先休息一下再說",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "立刻著手處理",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "向朋友傾訴",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "忽略壓力繼續做",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_90f1c6ea",
+      "created_at": "2026-06-15T16:15:37+08:00"
+    },
+    {
+      "question_id": "q_fdbbdf_1",
+      "text": "與同學互動時你更傾向？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "與同學討論問題",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "與家人傾訴感受",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "独自處理問題",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "尋求外部幫助",
+          "weights": {
+            "stress": 5,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "relationship"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_90f1c6ea",
+      "created_at": "2026-06-15T16:15:37+08:00"
+    },
+    {
+      "question_id": "q_a479fc_2",
+      "text": "安排學習計畫時你通常會？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "制定詳細計畫",
+          "weights": {
+            "stress": 4,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "隨機應對問題",
+          "weights": {
+            "stress": 2,
+            "energy": 5
+          }
+        },
+        {
+          "id": "C",
+          "text": "拖延任務",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "利用碎片時間學習",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "time_management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_90f1c6ea",
+      "created_at": "2026-06-15T16:15:37+08:00"
+    },
+    {
+      "question_id": "q_7c4b05_3",
+      "text": "面對壓力時你更關注？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "熬夜保持清醒",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "精神狀態良好",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "睡眠不足",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "作息規律",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        }
+      ],
+      "tags": [
+        "health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_90f1c6ea",
+      "created_at": "2026-06-15T16:15:37+08:00"
+    },
+    {
+      "question_id": "q_58dd4a_4",
+      "text": "面對挫折時你更傾向？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "接受事實",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "自我批判",
+          "weights": {
+            "stress": 3,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "積極應對",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "逃避問題",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "emotional_regulation"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_90f1c6ea",
+      "created_at": "2026-06-15T16:15:37+08:00"
+    },
+    {
+      "question_id": "q_03a238_0",
+      "text": "你最常因壓力而採取的行為是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即求助老師或朋友",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "自己獨自解決問題",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "拖延作業直到最後臨時應對",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全放棄並選擇逃避",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_abd0de6c",
+      "created_at": "2026-06-15T16:17:34+08:00"
+    },
+    {
+      "question_id": "q_e7cf12_1",
+      "text": "在壓力情境下，你更傾向與誰討論問題？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "只與室友討論",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "主動找老師或心理諮商師",
+          "weights": {
+            "stress": 4,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "只與同學討論但不分享個人感受",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "避免與任何人討論以保持獨立",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "social_support"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_abd0de6c",
+      "created_at": "2026-06-15T16:17:34+08:00"
+    },
+    {
+      "question_id": "q_d2cce1_2",
+      "text": "你通常如何安排學習時間？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "使用日曆規劃每日任務",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "隨機安排學習時間",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "用番茄鐘分段學習",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "無固定計畫隨意學習",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "time_management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_abd0de6c",
+      "created_at": "2026-06-15T16:17:34+08:00"
+    },
+    {
+      "question_id": "q_42d16d_3",
+      "text": "你認為自己的睡眠質量如何？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "經常熬夜且睡眠差",
+          "weights": {
+            "stress": 5,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "偶爾熬夜但睡眠較好",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "一般睡眠質量",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "睡眠質量很好",
+          "weights": {
+            "stress": 1,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "sleep_quality"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_abd0de6c",
+      "created_at": "2026-06-15T16:17:34+08:00"
+    },
+    {
+      "question_id": "q_9ce8c4_4",
+      "text": "面對失敗時，你更傾向如何應對？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即否定自己的能力",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "分析原因並嘗試改進",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        },
+        {
+          "id": "C",
+          "text": "完全放棄並選擇逃避",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "與朋友討論並尋求建議",
+          "weights": {
+            "stress": 3,
+            "energy": 5
+          }
+        }
+      ],
+      "tags": [
+        "emotional_regulation"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_abd0de6c",
+      "created_at": "2026-06-15T16:17:34+08:00"
+    },
+    {
+      "question_id": "q_9d6823_0",
+      "text": "你面對作業截止時的行為反應是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即逃避作業",
+          "weights": {
+            "stress": 1,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "制定緊急作業計畫",
+          "weights": {
+            "stress": 2,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "感到焦慮但繼續作業",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "主動與老師溝通調整計畫",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "stress"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_1e804dbb",
+      "created_at": "2026-06-16T13:38:20+08:00"
+    },
+    {
+      "question_id": "q_795154_1",
+      "text": "與同學討論問題時的行為是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "主動尋求同學幫助",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "僅依靠自身知識解決",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "對同學的意見不感興趣",
+          "weights": {
+            "stress": 3,
+            "energy": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "與同學討論後立即行動",
+          "weights": {
+            "stress": 2,
+            "energy": 4
+          }
+        }
+      ],
+      "tags": [
+        "social_support"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_1e804dbb",
+      "created_at": "2026-06-16T13:38:20+08:00"
+    },
+    {
+      "question_id": "q_766073_2",
+      "text": "安排讀書計畫的方式是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "使用日程表規畫學習時間",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "設定短期目標並分階段完成",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "依靠手機應用自動安排",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "隨機安排學習時間",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "time_management"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_1e804dbb",
+      "created_at": "2026-06-16T13:38:20+08:00"
+    },
+    {
+      "question_id": "q_7f0b97_3",
+      "text": "熬夜後的身體狀態是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "感到疲倦但精神集中",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "睡眠品質惡化導致次日困倦",
+          "weights": {
+            "stress": 3,
+            "energy": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "身體狀況改善但情緒低落",
+          "weights": {
+            "stress": 1,
+            "energy": 4
+          }
+        },
+        {
+          "id": "D",
+          "text": "身體狀況無明顯變化",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "physical_health"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_1e804dbb",
+      "created_at": "2026-06-16T13:38:20+08:00"
+    },
+    {
+      "question_id": "q_dc7a9c_4",
+      "text": "面對失敗時的處理方式是？",
+      "type": "single",
+      "options": [
+        {
+          "id": "A",
+          "text": "立即接受並分析原因",
+          "weights": {
+            "stress": 3,
+            "energy": 4
+          }
+        },
+        {
+          "id": "B",
+          "text": "自我批判導致情緒低落",
+          "weights": {
+            "stress": 2,
+            "energy": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "調整策略並嘗試再次努力",
+          "weights": {
+            "stress": 1,
+            "energy": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "完全放棄並選擇逃避",
+          "weights": {
+            "stress": 4,
+            "energy": 1
+          }
+        }
+      ],
+      "tags": [
+        "emotional_regulation"
+      ],
+      "source": "ai",
+      "source_prompt_id": "prompt_1e804dbb",
+      "created_at": "2026-06-16T13:38:20+08:00"
+    }
+  ]
+}

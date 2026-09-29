@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "log_id": "dash_0001",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-28T10:20:00+08:00"
+    },
+    {
+      "log_id": "dash_0002",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:16+08:00"
+    },
+    {
+      "log_id": "dash_0003",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:17+08:00"
+    },
+    {
+      "log_id": "dash_0004",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T12:08:18+08:00"
+    },
+    {
+      "log_id": "dash_0005",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T12:08:18+08:00"
+    },
+    {
+      "log_id": "dash_0006",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T12:08:18+08:00"
+    },
+    {
+      "log_id": "dash_0007",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T12:08:19+08:00"
+    },
+    {
+      "log_id": "dash_0008",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:21+08:00"
+    },
+    {
+      "log_id": "dash_0009",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:22+08:00"
+    },
+    {
+      "log_id": "dash_0010",
+      "user_id": "u_0001",
+      "action": "suggest-skip",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:23+08:00"
+    },
+    {
+      "log_id": "dash_0011",
+      "user_id": "u_0001",
+      "action": "suggest-skip",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:23+08:00"
+    },
+    {
+      "log_id": "dash_0012",
+      "user_id": "u_0001",
+      "action": "suggest-skip",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:23+08:00"
+    },
+    {
+      "log_id": "dash_0013",
+      "user_id": "u_0001",
+      "action": "suggest-skip",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:23+08:00"
+    },
+    {
+      "log_id": "dash_0014",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:24+08:00"
+    },
+    {
+      "log_id": "dash_0015",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:27+08:00"
+    },
+    {
+      "log_id": "dash_0016",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-05-31T12:08:29+08:00"
+    },
+    {
+      "log_id": "dash_0017",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "login-timer",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T12:08:36+08:00"
+    },
+    {
+      "log_id": "dash_0018",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "login-timer",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T12:08:37+08:00"
+    },
+    {
+      "log_id": "dash_0019",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T12:21:56+08:00"
+    },
+    {
+      "log_id": "dash_0020",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T12:21:58+08:00"
+    },
+    {
+      "log_id": "dash_0021",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T12:31:26+08:00"
+    },
+    {
+      "log_id": "dash_0022",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T12:31:29+08:00"
+    },
+    {
+      "log_id": "dash_0023",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "collapsed"
+      },
+      "ts": "2026-05-31T23:38:35+08:00"
+    },
+    {
+      "log_id": "dash_0024",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "suggestions",
+        "state": "expanded"
+      },
+      "ts": "2026-05-31T23:38:36+08:00"
+    },
+    {
+      "log_id": "dash_0025",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-06-01T00:12:45+08:00"
+    },
+    {
+      "log_id": "dash_0026",
+      "user_id": "u_0001",
+      "action": "suggest-skip",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-06-01T00:12:46+08:00"
+    },
+    {
+      "log_id": "dash_0027",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "collapsed"
+      },
+      "ts": "2026-06-01T00:12:53+08:00"
+    },
+    {
+      "log_id": "dash_0028",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "tasks",
+        "state": "expanded"
+      },
+      "ts": "2026-06-01T00:12:54+08:00"
+    },
+    {
+      "log_id": "dash_0029",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0001"
+      },
+      "ts": "2026-06-01T00:12:56+08:00"
+    },
+    {
+      "log_id": "dash_0030",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "login-timer",
+        "state": "collapsed"
+      },
+      "ts": "2026-06-01T00:14:47+08:00"
+    },
+    {
+      "log_id": "dash_0031",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "login-timer",
+        "state": "expanded"
+      },
+      "ts": "2026-06-01T00:14:49+08:00"
+    },
+    {
+      "log_id": "dash_0032",
+      "user_id": "u_0001",
+      "action": "suggest-done",
+      "detail": {
+        "index": 0
+      },
+      "ts": "2026-06-01T00:25:46+08:00"
+    },
+    {
+      "log_id": "dash_0033",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "weekly-stats",
+        "state": "collapsed"
+      },
+      "ts": "2026-06-01T00:28:09+08:00"
+    },
+    {
+      "log_id": "dash_0034",
+      "user_id": "u_0001",
+      "action": "toggle_card",
+      "detail": {
+        "card": "weekly-stats",
+        "state": "expanded"
+      },
+      "ts": "2026-06-01T00:28:10+08:00"
+    },
+    {
+      "log_id": "dash_0035",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0008"
+      },
+      "ts": "2026-06-04T19:36:32+08:00"
+    },
+    {
+      "log_id": "dash_0036",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0005"
+      },
+      "ts": "2026-06-04T19:37:01+08:00"
+    },
+    {
+      "log_id": "dash_0037",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": false
+      },
+      "ts": "2026-06-04T19:46:59+08:00"
+    },
+    {
+      "log_id": "dash_0038",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": false
+      },
+      "ts": "2026-06-04T19:46:59+08:00"
+    },
+    {
+      "log_id": "dash_0039",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": true
+      },
+      "ts": "2026-06-04T19:47:00+08:00"
+    },
+    {
+      "log_id": "dash_0040",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": false
+      },
+      "ts": "2026-06-04T19:47:01+08:00"
+    },
+    {
+      "log_id": "dash_0041",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": true
+      },
+      "ts": "2026-06-04T19:47:02+08:00"
+    },
+    {
+      "log_id": "dash_0042",
+      "user_id": "u_0001",
+      "action": "toggle_completed_tasks",
+      "detail": {
+        "enabled": false
+      },
+      "ts": "2026-06-04T19:47:05+08:00"
+    },
+    {
+      "log_id": "dash_0043",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0014"
+      },
+      "ts": "2026-06-04T19:59:33+08:00"
+    },
+    {
+      "log_id": "dash_0044",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0013"
+      },
+      "ts": "2026-06-04T20:02:02+08:00"
+    },
+    {
+      "log_id": "dash_0045",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0006"
+      },
+      "ts": "2026-06-15T14:48:34+08:00"
+    },
+    {
+      "log_id": "dash_0046",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0007"
+      },
+      "ts": "2026-06-15T14:48:40+08:00"
+    },
+    {
+      "log_id": "dash_0047",
+      "user_id": "u_0001",
+      "action": "complete_task",
+      "detail": {
+        "task_id": "t_0002"
+      },
+      "ts": "2026-06-15T14:48:44+08:00"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>大學生學習壓力心理測驗</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Source+Sans+Pro:300,400,600&display=swap" rel="stylesheet">
+
+    <style>
+        /* 基礎設定 */
+        body {
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding-top: 110px; /* 60px fixed nav header + 50px original */
+            background-color: #2e3141;
+            color: #ffffff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* 內容卡片區塊 */
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #353849;
+            border-radius: 5px;
+            border: 1px solid rgba(255,255,255,0.125);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* 選項按鈕 */
+        .option-label {
+            display: block;
+            margin: 12px 0;
+            text-align: left;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.125);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s;
+            color: rgba(255,255,255,0.65);
+        }
+        .option-label:hover {
+            background: #3d4051;
+            color: #ffffff;
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        /* 主要按鈕 ( Primary Button ) */
+        button {
+            padding: 10px 25px;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            background-color: #4c5c96;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover {
+            background-color: #53639e;
+        }
+        button:active {
+            background-color: #45558d;
+        }
+
+        /* 狀態文字 */
+        #status-text {
+            color: rgba(255,255,255,0.65);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="quiz-container">
+        <h1 id="main-title">心理健康與學習壓力測驗</h1>
+
+        <p id="status-text">AI 正在為您量身打造專屬題目，請稍候...</p>
+
+        <div id="question-area" style="display: none;">
+            <h2 id="question-text">載入題目中...</h2>
+            <div id="options-area"></div>
+            <br>
+            <button id="next-btn">下一題</button>
+        </div>
+
+        <button id="start-btn" style="display: none;">開始測驗</button>
+    </div>
+
+    <script src="/psych/js/psych_main.js"></script>
+    <script src="/dashboard/assets/js/nav.js"></script>
+</body>
+</html>

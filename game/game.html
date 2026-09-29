@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Deadline Survival</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/game/css/game.css">
+</head>
+<body>
+
+    <div class="game-header">
+        <h2>🔥 閃避遊戲 🔥</h2>
+        <p>操作說明：按 <strong>「左 / 右」</strong> 方向鍵移動角色。<br>
+        躲避 <span class="danger">0 分考卷</span>，接住 <span class="bonus">書本加 5 分</span>，接住 <span class="bonus">遊戲機加 2 分</span>！</p>
+    </div>
+
+    <div id="difficultyContainer" class="action-container">
+        <p class="instruction-text">請選擇遊戲難度開始：</p>
+        <button class="button" id="btnEasy">簡單</button>
+        <button class="button primary" id="btnMedium">中等</button>
+        <button class="button" id="btnHard">困難</button>
+    </div>
+
+    <canvas id="gameCanvas" width="700" height="600"></canvas>
+
+    <div class="action-container bottom-actions">
+        <button id="pauseBtn" class="button">暫停遊戲</button>
+        <button id="restartBtn" class="button primary">重新開始遊戲</button>
+    </div>
+
+    <script src="/game/js/game.js"></script>
+    <script src="/dashboard/assets/js/nav.js"></script>
+</body>
+</html>
