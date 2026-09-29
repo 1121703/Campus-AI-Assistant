@@ -1,4 +1,3 @@
-```markdown
 # 校園 AI 助手 (Campus AI Assistant)
 
 專為元智大學師生設計的個人化智慧校園整合平台，結合即時校園資訊儀表板、智慧行事曆排程與生成式 AI 對話輔助，提供一站式、高效率的人機互動校園服務體驗[cite: 5]。
@@ -51,8 +50,6 @@
 git clone [https://github.com/1121703/Campus-AI-Assistant.git](https://github.com/1121703/Campus-AI-Assistant.git)
 cd Campus-AI-Assistant
 
-```
-
 ### 2. 環境安裝 (Installation)
 
 請確保您的環境已安裝專案所需的相依套件環境（依專案實際配置如 Node.js / Python / Docker 等）：
@@ -93,7 +90,3 @@ python app.py
 ## 📄 授權條款 (License)
 
 本專案採 MIT License 條款授權開源。
-
-```
-
-```
